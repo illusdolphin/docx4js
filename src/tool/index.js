@@ -107,17 +107,6 @@ function makeTool(xmlParser, Document, Node, NodeList, scopable){
 		}
 	})
 
-	$.extend(NodeList.prototype,{
-		asArray: function(o){
-			o=o||[]
-			for(var i=0,len=this.length;i<len;i++)
-				o.push(this[i])
-			return o
-		},
-		forEach: Array.prototype.forEach,
-		map: Array.prototype.map
-	})
-
 	return $
 }
 
